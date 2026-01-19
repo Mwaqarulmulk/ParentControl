@@ -13,3 +13,22 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase and Google Services
+google-services.json
+app-child/google-services.json
+app-parent/google-services.json
+
+# Supabase Configuration
+supabase/.temp/
+supabase/config.toml
+
+# API Keys and Secrets
+secrets.properties
+keystore.properties
+*.jks
+*.keystore
+
+# Environment variables
+.env
+.env.local

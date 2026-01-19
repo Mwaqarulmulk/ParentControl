@@ -1,14 +1,17 @@
 package com.myparentalcontrol.shared.data.supabase
 
+import com.myparentalcontrol.shared.BuildConfig
+
 /**
  * Supabase configuration for the Parental Control App
+ * IMPORTANT: Add your actual keys to local.properties file
  */
 object SupabaseConfig {
-    // Supabase project URL
-    const val SUPABASE_URL = "https://nvtwvvnwytxwimlvtjjv.supabase.co"
+    // Supabase project URL - loaded from BuildConfig
+    val SUPABASE_URL: String = BuildConfig.SUPABASE_URL
     
-    // Supabase anon/public key (safe to use in client apps)
-    const val SUPABASE_ANON_KEY = "sb_publishable_0JZ__54BsfDHTicn9VgJMQ_q7iqx5mo"
+    // Supabase anon/public key - loaded from BuildConfig
+    val SUPABASE_ANON_KEY: String = BuildConfig.SUPABASE_ANON_KEY
     
     // Database table names
     object Tables {
