@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.sql": "sql"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": null
+    },
+    "sqltools.useNodeRuntime": true,
+    "mssql.ignorePlatformWarning": true,
+    "sql.linting.enabled": false
+}

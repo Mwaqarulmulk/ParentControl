@@ -1,0 +1,222 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :app-child:preBuild UP-TO-DATE
+> Task :app-child:preDebugBuild UP-TO-DATE
+> Task :app-child:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app-child:checkKotlinGradlePluginConfigurationErrors
+> Task :app-child:generateDebugBuildConfig UP-TO-DATE
+> Task :shared:preBuild UP-TO-DATE
+> Task :shared:preDebugBuild UP-TO-DATE
+> Task :shared:writeDebugAarMetadata UP-TO-DATE
+> Task :app-child:checkDebugAarMetadata UP-TO-DATE
+> Task :app-child:generateDebugResValues UP-TO-DATE
+> Task :app-child:processDebugGoogleServices UP-TO-DATE
+> Task :shared:generateDebugResValues UP-TO-DATE
+> Task :shared:generateDebugResources UP-TO-DATE
+> Task :shared:packageDebugResources UP-TO-DATE
+> Task :app-child:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app-child:generateDebugResources UP-TO-DATE
+> Task :app-child:mergeDebugResources UP-TO-DATE
+> Task :app-child:packageDebugResources UP-TO-DATE
+> Task :app-child:parseDebugLocalResources UP-TO-DATE
+> Task :app-child:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app-child:extractDeepLinksDebug UP-TO-DATE
+> Task :shared:extractDeepLinksDebug UP-TO-DATE
+> Task :shared:processDebugManifest UP-TO-DATE
+> Task :app-child:processDebugMainManifest UP-TO-DATE
+> Task :app-child:processDebugManifest UP-TO-DATE
+> Task :app-child:processDebugManifestForPackage UP-TO-DATE
+> Task :shared:compileDebugLibraryResources UP-TO-DATE
+> Task :shared:parseDebugLocalResources UP-TO-DATE
+> Task :shared:generateDebugRFile UP-TO-DATE
+> Task :app-child:processDebugResources UP-TO-DATE
+> Task :shared:checkKotlinGradlePluginConfigurationErrors
+> Task :shared:generateDebugBuildConfig UP-TO-DATE
+> Task :shared:kspDebugKotlin UP-TO-DATE
+> Task :shared:compileDebugKotlin UP-TO-DATE
+> Task :shared:javaPreCompileDebug UP-TO-DATE
+> Task :shared:compileDebugJavaWithJavac UP-TO-DATE
+> Task :shared:transformDebugClassesWithAsm UP-TO-DATE
+> Task :shared:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app-child:javaPreCompileDebug UP-TO-DATE
+> Task :app-child:mergeDebugShaders UP-TO-DATE
+> Task :app-child:compileDebugShaders NO-SOURCE
+> Task :app-child:generateDebugAssets UP-TO-DATE
+> Task :shared:mergeDebugShaders UP-TO-DATE
+> Task :shared:compileDebugShaders NO-SOURCE
+> Task :shared:generateDebugAssets UP-TO-DATE
+> Task :shared:packageDebugAssets UP-TO-DATE
+> Task :app-child:mergeDebugAssets UP-TO-DATE
+> Task :app-child:compressDebugAssets UP-TO-DATE
+> Task :shared:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app-child:desugarDebugFileDependencies UP-TO-DATE
+> Task :shared:processDebugJavaRes UP-TO-DATE
+> Task :app-child:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app-child:mergeExtDexDebug UP-TO-DATE
+> Task :shared:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app-child:mergeDebugJniLibFolders UP-TO-DATE
+> Task :shared:mergeDebugJniLibFolders UP-TO-DATE
+> Task :shared:mergeDebugNativeLibs NO-SOURCE
+> Task :shared:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app-child:mergeDebugNativeLibs UP-TO-DATE
+> Task :app-child:mergeLibDexDebug UP-TO-DATE
+> Task :app-child:stripDebugDebugSymbols UP-TO-DATE
+> Task :app-child:validateSigningDebug UP-TO-DATE
+> Task :app-child:writeDebugAppMetadata UP-TO-DATE
+> Task :app-child:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app-child:kspDebugKotlin
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+Failed to compile with Kotlin daemon: java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Using fallback strategy: Compile without Kotlin daemon
+Try ./gradlew --stop if this issue persists.
+exception: info: [ksp] loaded provider(s): [dagger.hilt.processor.internal.uninstallmodules.KspUninstallModulesProcessor$Provider, dagger.hilt.processor.internal.earlyentrypoint.KspEarlyEntryPointProcessor$Provider, dagger.hilt.processor.internal.root.KspComponentTreeDepsProcessor$Provider, dagger.hilt.android.processor.internal.bindvalue.KspBindValueProcessor$Provider, dagger.hilt.processor.internal.generatesrootinput.KspGeneratesRootInputProcessor$Provider, dagger.hilt.processor.internal.aliasof.KspAliasOfProcessor$Provider, dagger.hilt.processor.internal.aggregateddeps.KspAggregatedDepsProcessor$Provider, dagger.hilt.processor.internal.root.KspRootProcessor$Provider, dagger.hilt.processor.internal.originatingelement.KspOriginatingElementProcessor$Provider, dagger.hilt.processor.internal.definecomponent.KspDefineComponentProcessor$Provider, dagger.hilt.android.processor.internal.viewmodel.KspViewModelProcessor$Provider, dagger.hilt.android.processor.internal.customtestapplication.KspCustomTestApplicationProcessor$Provider, dagger.hilt.android.processor.internal.androidentrypoint.KspAndroidEntryPointProcessor$Provider, AndroidXHiltKspProcessor$Provider, androidx.room.RoomKspProcessor$Provider, dagger.internal.codegen.KspComponentProcessor$Provider]
+
+> Task :app-child:compileDebugKotlin
+w: Classpath entry points to a non-existent location: C:\Users\Hp\AndroidStudioProjects\ParentalControlApp\app-child\build\intermediates\compile_and_runtime_not_namespaced_r_class_jar\debug\R.jar
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/ChildApplication.kt:25:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/ChildApplication.kt:28:41 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/ChildApplication.kt:35:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/ChildApplication.kt:38:41 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:26:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:91:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:106:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:115:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:124:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:133:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/permissions/PermissionsScreen.kt:147:42 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:19:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:39:47 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:65:39 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:76:47 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:116:41 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/setup/SetupScreen.kt:118:41 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/status/StatusScreen.kt:16:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/presentation/screens/status/StatusScreen.kt:28:47 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/AppUsageService.kt:16:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/AppUsageService.kt:101:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/AudioStreamingService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/AudioStreamingService.kt:99:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CallSmsLogService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CallSmsLogService.kt:100:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CameraStreamingService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CameraStreamingService.kt:99:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ChildFirebaseMessagingService.kt:14:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ChildFirebaseMessagingService.kt:119:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CommandListenerService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/CommandListenerService.kt:100:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/LocationTrackingService.kt:21:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/LocationTrackingService.kt:250:29 Unresolved reference: drawable
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/MonitoringService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/MonitoringService.kt:105:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ScreenMirroringService.kt:15:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ScreenMirroringService.kt:99:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ScreenTimeService.kt:16:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/service/ScreenTimeService.kt:104:27 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/streaming/services/StreamingService.kt:10:36 Unresolved reference: R
+e: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/app-child/src/main/java/com/myparentalcontrol/child/streaming/services/StreamingService.kt:447:27 Unresolved reference: R
+
+> Task :app-child:compileDebugKotlin FAILED
+w: Detected multiple Kotlin daemon sessions at kotlin\sessions
+
+[Incubating] Problems report is available at: file:///C:/Users/Hp/AndroidStudioProjects/ParentalControlApp/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app-child:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 6m 49s
+54 actionable tasks: 4 executed, 50 up-to-date

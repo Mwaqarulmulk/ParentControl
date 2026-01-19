@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Child Monitor</string>
+    
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_description">This service monitors app usage to help parents keep track of screen time and block inappropriate apps.</string>
+    
+    <!-- Notification Channels -->
+    <string name="channel_monitoring_name">Monitoring Service</string>
+    <string name="channel_monitoring_description">Shows when the monitoring service is running</string>
+    <string name="channel_alerts_name">Alerts</string>
+    <string name="channel_alerts_description">Important alerts and notifications</string>
+    
+    <!-- Notifications -->
+    <string name="notification_monitoring_title">Child Monitor Active</string>
+    <string name="notification_monitoring_text">Monitoring service is running</string>
+    <string name="notification_location_title">Location Tracking</string>
+    <string name="notification_location_text">Location is being shared with parent</string>
+    <string name="notification_streaming_title">Streaming Active</string>
+    <string name="notification_streaming_text">Camera/Screen is being shared</string>
+    
+    <!-- Permissions -->
+    <string name="permission_location_rationale">Location permission is needed to share your location with your parent.</string>
+    <string name="permission_camera_rationale">Camera permission is needed for live camera streaming.</string>
+    <string name="permission_microphone_rationale">Microphone permission is needed for audio streaming.</string>
+    <string name="permission_usage_stats_rationale">Usage access is needed to monitor app usage.</string>
+    <string name="permission_overlay_rationale">Overlay permission is needed to block apps.</string>
+    <string name="permission_notification_rationale">Notification permission is needed to show service status.</string>
+    
+    <!-- Setup -->
+    <string name="setup_title">Setup Child Device</string>
+    <string name="setup_description">Enter the pairing code from the parent app to connect this device.</string>
+    <string name="setup_pairing_code_hint">Pairing Code</string>
+    <string name="setup_connect_button">Connect</string>
+    <string name="setup_connecting">Connecting…</string>
+    <string name="setup_success">Successfully connected!</string>
+    <string name="setup_error">Connection failed. Please try again.</string>
+    
+    <!-- Status -->
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_syncing">Syncing…</string>
+    <string name="status_last_sync">Last sync: %1$s</string>
+    
+    <!-- App Blocking -->
+    <string name="app_blocked_title">App Blocked</string>
+    <string name="app_blocked_message">This app has been blocked by your parent.</string>
+    <string name="screen_time_exceeded_title">Screen Time Limit Reached</string>
+    <string name="screen_time_exceeded_message">You have reached your daily screen time limit.</string>
+    
+    <!-- Device Admin -->
+    <string name="device_admin_description">Enable device administrator to allow parental controls.</string>
+    
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_permission_denied">Permission denied</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474893844432",
+    "project_id": "parentalcontrolapp-fefed",
+    "storage_bucket": "parentalcontrolapp-fefed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474893844432:android:1b30d037d57eafa67f03d5",
+        "android_client_info": {
+          "package_name": "com.myparentalcontrol.child"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoqgJPpRnrckFEzUsUVkZpnYQFTG7Un-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474893844432:android:06c25a822274b3577f03d5",
+        "android_client_info": {
+          "package_name": "com.myparentalcontrol.parent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoqgJPpRnrckFEzUsUVkZpnYQFTG7Un-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
